@@ -142,3 +142,4 @@ if st.button("Lakuin Rolling tempat duduk! 🎲") and subclass != 'Kosong':
     seatgen(subclass)
 else:
     st.warning("Pilih subkelasmu!")
+    st.error("Nyalain mode 'situs desktop' di settingan chrome-nya biar hasilnya ga kacau")
