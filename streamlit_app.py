@@ -36,54 +36,56 @@ def seatgen(subclass):
             border-radius: 5px;
             text-align: center;
             font-weight: bold;
-            width: 35%;
+            width: 254px;
             margin: auto;
         ">
             PAPAN TULIS
         </div>
         """,
         unsafe_allow_html=True)
-    col1, col2, col3 = st.columns([1.1,0.89,1.48])
     match subclass:
         case 'X-1' | 'X-2' | 'X-3' | 'X-4':
-            with col3:
-                st.markdown(
-                    """
-                    <div style="
-                        background-color: #ba6900;
-                        color: black;
-                        padding: 1px;
-                        border-radius: 5px;
-                        text-align: right;
-                        font-weight: bold;
-                        font-size: 0.85rem;
-                        display: block;
-                        width: 21%;   
-                    ">
-                        MejaGuru
-                    </div>
-                    """,
-                    unsafe_allow_html=True
-                )
+            st.markdown(
+                """
+                <div style="
+                    background-color: #ba6900;
+                    color: black;
+                    padding: 2px;
+                    border-radius: 5px;
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: 0.85rem;
+                    display: block;
+                    width: 70px;
+                    margin: 0 auto;
+                    transform: translateX(90px);
+                ">
+                    Meja Guru
+                </div>
+                """,
+                unsafe_allow_html=True
+            )
         case 'X-5' | 'X-6':
-            with col2:
-                st.markdown(
-                    """
-                    <div style="
-                        background-color: #ba6900;
-                        color: black;
-                        padding: 1px;
-                        border-radius: 5px;
-                        text-align: left !important;
-                        font-size: 0.85rem;
-                        font-weight: bold;
-                        width: 35%;   
-                    ">
-                        MejaGuru
-                    </div>
-                    """,
-                    unsafe_allow_html=True
-                )
+            st.markdown(
+                """
+                <div style="
+                    background-color: #ba6900;
+                    color: black;
+                    padding: 2px;
+                    border-radius: 5px;
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: 0.85rem;
+                    display: block;
+                    width: 70px;
+                    margin: 0 auto;
+                    transform: translateX(-90px);
+                ">
+                    MejaGuru
+                </div>
+                """,
+                unsafe_allow_html=True
+            )
     counter = 1
     for i in range(4):
         st.write()
