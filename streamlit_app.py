@@ -212,7 +212,7 @@ if st.button("Lakuin Rolling tempat duduk! 🎲"):
         st.session_state.count += 1
     elif subclass == 'Kosong':
         st.markdown("""<div style='background-color:rgba(255,0,0,0.8);opacity:0.9;border-radius:30px;text-align:left;padding:13px;
-                    color: #660a03'>Pilih kelas dulu lah kocak... 😐</div>""", unsafe_allow_html=True)
+                    color: #000000'>Pilih kelas dulu lah kocak... 😐</div>""", unsafe_allow_html=True)
 else:
     st.markdown("""
         <style>
