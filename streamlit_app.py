@@ -182,7 +182,8 @@ def seatgen(subclass):
             }
             </style>
         """, unsafe_allow_html=True)
-    st.success(f'Pengacakan Berhasil!! 🥳🥳🥳 (kamu dah rolling {st.session_state.count} kali)')
+    st.markdown(f"""<div style='background-color:rgba(0,175,0,0.8);opacity:0.9;border-radius:30px;text-align:left;padding:13px;
+                    color: #000000'>Pengacakan Berhasil!! 🥳🥳🥳 (kamu dah rolling {st.session_state.count} kali)</div>""", unsafe_allow_html=True)
 
 st.markdown(
     """
@@ -214,17 +215,9 @@ if st.button("Lakuin Rolling tempat duduk! 🎲"):
         st.markdown("""<div style='background-color:rgba(255,0,0,0.8);opacity:0.9;border-radius:30px;text-align:left;padding:13px;
                     color: #000000'>Pilih kelas dulu lah kocak... 😐</div>""", unsafe_allow_html=True)
 else:
-    st.markdown("""
-        <style>
-        .stAlert {
-            background-color: #e8c100 ;
-            opacity: 0.5 ;
-            border-radius: 30px ;
-        }
-        </style>
-    """, unsafe_allow_html=True)
-
-    st.warning("Pilih Kelasmu! 📚")
+    st.markdown("""<div style='background-color:rgba(242,210,0,0.8);opacity:0.9;border-radius:30px;text-align:left;padding:13px;
+                    color: #000000'>Pilih Kelasmu! 📚</div>""", unsafe_allow_html=True)
+    st.warning("")
 
 st.markdown("""
         <span style='color:white;margin:0px;text-shadow:-2px -2px 0 red;font-weight:bold'>Credits:</span>""", unsafe_allow_html=True)
