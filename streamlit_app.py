@@ -53,7 +53,7 @@ def seatgen(subclass):
             border: solid;
             height: 20px;
             background-color: white;
-            margin: 10px;
+            margin: 5px;
         }
         </style>
     """, unsafe_allow_html=True)
