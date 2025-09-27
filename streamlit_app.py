@@ -46,7 +46,7 @@ def seatgen(subclass):
     if subclass == 'X-6':
         data = {1: 'P', 2: 'P', 3: 'L', 4: 'L', 5: 'L', 6: 'P', 7: 'L', 8: 'L', 9: 'L', 10: 'P', 11: 'P', 12: 'L', 13: 'L', 14: 'L', 15: 'P', 16: 'P', 17: 'L', 18: 'L', 19: 'P', 20: 'P', 21: 'P', 22: 'P', 23: 'L', 24: 'L', 25: 'L', 26: 'L', 27: 'P', 28: 'P', 29: 'P', 30: 'P', 31: 'L', 32: 'P'}
 
-    st.markdown("""<div style="font-size: 1.5rem;font-family: Times New Roman;text-align:center;font-weight:bold;background-color:#04a0d4;border-radius:8px;padding:0.05px">Tata Letak Tempat Duduk Baru!</div>""", unsafe_allow_html=True)
+    st.markdown("""<div style="font-size: 1rem;font-family: Times New Roman;text-align:center;font-weight:bold;background-color:#04a0d4;border-radius:8px;padding:0.05px">Tata Letak Tempat Duduk Baru!</div>""", unsafe_allow_html=True)
     st.markdown("""
         <style>
         hr {
@@ -90,7 +90,7 @@ def seatgen(subclass):
                     display: block;
                     width: 70px;
                     margin: 0 auto;
-                    transform: translateX(70px);
+                    transform: translateX(65px);
                 ">
                     Meja Guru
                 </div>
@@ -111,7 +111,7 @@ def seatgen(subclass):
                     display: block;
                     width: 70px;
                     margin: 0 auto;
-                    transform: translateX(-70px);
+                    transform: translateX(-65px);
                 ">
                     MejaGuru
                 </div>
@@ -219,6 +219,7 @@ else:
                     color: #000000'>Pilih Kelasmu! 📚</div>""", unsafe_allow_html=True)
 
 st.markdown("""
+        <br>
         <span style='color:white;margin:0px;text-shadow:-2px -2px 0 red;font-weight:bold'>Credits:</span>
         <br>
         <span style='color:lime;text-shadow:-2px -2px 0 blue;font-weight:bold'>1.) Gw yang namanya cuma satu kata (Pembuat projek)
