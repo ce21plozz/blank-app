@@ -90,7 +90,7 @@ def seatgen(subclass):
                     display: block;
                     width: 70px;
                     margin: 0 auto;
-                    transform: translateX(80px);
+                    transform: translateX(60px);
                 ">
                     Meja Guru
                 </div>
@@ -111,7 +111,7 @@ def seatgen(subclass):
                     display: block;
                     width: 70px;
                     margin: 0 auto;
-                    transform: translateX(-80px);
+                    transform: translateX(-60px);
                 ">
                     MejaGuru
                 </div>
@@ -179,6 +179,7 @@ def seatgen(subclass):
                 background-color: #00d907 ;
                 opacity: 0.9 ;
                 border-radius: 30px ;
+                color: black;
             }
             </style>
         """, unsafe_allow_html=True)
@@ -220,6 +221,7 @@ else:
             background-color: #e8c100 ;
             opacity: 0.95 ;
             border-radius: 30px ;
+            color : black;
         }
         </style>
     """, unsafe_allow_html=True)
