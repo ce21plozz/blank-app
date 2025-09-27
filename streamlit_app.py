@@ -62,7 +62,7 @@ def seatgen(subclass):
     st.markdown(
         """
         <div style="
-            background-color: #d1d1d1;
+            background-color: #858585;
             color: black;
             padding: 1px;
             border-radius: 5px;
@@ -168,7 +168,7 @@ def seatgen(subclass):
                 rows[rcount] += '&nbsp;&nbsp;&nbsp;'
             rows[rcount] = rows[rcount].strip()
         st.markdown(f"""
-        <div style="text-align:center;max-width: 100%; margin: auto;font-size:0.8rem">
+        <div style="text-align:center;max-width: 100%; margin: auto;font-size:0.82rem">
             <span style= "text-align:center !important;background-color: black;border-radius:3px;padding:3px">{rows[rcount]}</span>
         </div>""", unsafe_allow_html=True)
         rcount += 1
