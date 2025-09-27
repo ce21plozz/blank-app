@@ -219,8 +219,8 @@ else:
                     color: #000000'>Pilih Kelasmu! 📚</div>""", unsafe_allow_html=True)
 
 st.markdown("""
-        <span style='color:white;margin:0px;text-shadow:-2px -2px 0 red;font-weight:bold'>Credits:</span>""", unsafe_allow_html=True)
-st.markdown("""
+        <span style='color:white;margin:0px;text-shadow:-2px -2px 0 red;font-weight:bold'>Credits:</span>
+        <br>
         <span style='color:lime;text-shadow:-2px -2px 0 blue;font-weight:bold'>1.) Gw yang namanya cuma satu kata (Pembuat projek)
             <br>2.) Si tukang elektronik/komputer itu (Bugfixer)     
         </span>""", unsafe_allow_html=True)
