@@ -58,7 +58,7 @@ def seatgen(subclass):
             text-align: center;
             font-weight: bold;
             width: 240px;
-            margin: auto;
+            margin-bottom: 1px;
         ">
             PAPAN TULIS
         </div>
