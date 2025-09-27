@@ -195,7 +195,7 @@ st.markdown(
 )
 subclass = st.selectbox('', ['Kosong','X-1','X-2','X-3','X-4','X-5','X-6'])
 if 'count' not in st.session_state:
-    st.session_state.count = 0
+    st.session_state.count = 1
 if st.button("Lakuin Rolling tempat duduk! 🎲"):
     if subclass != 'Kosong':
         seatgen(subclass)
