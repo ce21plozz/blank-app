@@ -161,7 +161,7 @@ def seatgen(subclass):
             <span style= "text-align:center !important;background-color: black;border-radius:3px;padding:3px">{rows[rcount]}</span>
         </div>""", unsafe_allow_html=True)
         rcount += 1
-    st.markdown("<hr style= 'height:2px;background-color:white';border-radius:20px>", unsafe_allow_html=True)
+    st.markdown("<hr style= 'height:2px;background-color:white';border-radius:20px;margin: -2px>", unsafe_allow_html=True)
     st.markdown("""
             <style>
             .stAlert {
