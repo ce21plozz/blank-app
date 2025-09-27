@@ -55,7 +55,7 @@ def seatgen(subclass):
             color: black;
             padding: 0px;
             border-radius: 5px;
-            text-align: center;
+            text-align: center !important;
             font-weight: bold;
             width: 240px;
         ">
