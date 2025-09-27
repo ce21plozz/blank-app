@@ -130,7 +130,7 @@ def seatgen(subclass):
                     try:
                         idk = random.choice(list)
                     except IndexError:
-                        rows[3] += "&nbsp;&nbsp&nbsp;&nbsp;[XX]"
+                        rows[3] += "&nbsp;&nbsp&nbsp;[XX]"
                         break
                     if data[idk] == 'L' and (counter % 2 != 0 or counter % 2 == 0) and not 'P' in data.values():
                         output = f"[<span style = 'color : blue'>{idk:0>2}</span>]"
@@ -165,10 +165,10 @@ def seatgen(subclass):
                         else:
                             continue
             if j != 2 and i != 3:
-                rows[rcount] += '&nbsp;&nbsp;&nbsp;&nbsp;'
+                rows[rcount] += '&nbsp;&nbsp;&nbsp;'
             rows[rcount] = rows[rcount].strip()
         st.markdown(f"""
-        <div style="text-align:center;max-width: 60%; margin: auto;font-size:1rem">
+        <div style="text-align:center;max-width: 60%; margin: auto;font-size:0.75rem">
             <span style= "text-align:center !important;background-color: black;border-radius:3px;padding:3px">{rows[rcount]}</span>
         </div>""", unsafe_allow_html=True)
         rcount += 1
