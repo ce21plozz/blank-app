@@ -128,14 +128,14 @@ def seatgen(subclass):
                         list.remove(idk)
                         break
                     if data[idk] == 'P' and (counter % 2 != 0 or counter % 2 == 0) and not 'L' in data.values():
-                        output = f"[<span style = 'color : #e91ef7'>{idk:0>2}</span>]"
+                        output = f"[<span style = 'color : #ae04ba'>{idk:0>2}</span>]"
                         rows[rcount] += output
                         del data[idk]
                         list.remove(idk)
                         break
                     if data[idk] == "P":
                         if counter % 2 != 0:
-                            output = f"[<span style = 'color : #e91ef7'>{idk:0>2}</span>]"
+                            output = f"[<span style = 'color : #ae04ba'>{idk:0>2}</span>]"
                             counter += 1
                             rows[rcount] += output
                             del data[idk]
