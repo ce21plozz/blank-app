@@ -57,7 +57,7 @@ def seatgen(subclass):
             border-radius: 5px;
             text-align: center;
             font-weight: bold;
-            width: 200px;
+            width: 235px;
             margin: auto;
         ">
             PAPAN TULIS
@@ -79,7 +79,7 @@ def seatgen(subclass):
                     display: block;
                     width: 70px;
                     margin: 0 auto;
-                    transform: translateX(65px);
+                    transform: translateX(90px);
                 ">
                     Meja Guru
                 </div>
@@ -100,7 +100,7 @@ def seatgen(subclass):
                     display: block;
                     width: 70px;
                     margin: 0 auto;
-                    transform: translateX(-65px);
+                    transform: translateX(-90px);
                 ">
                     MejaGuru
                 </div>
