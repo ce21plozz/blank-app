@@ -50,10 +50,10 @@ def seatgen(subclass):
     st.markdown("""
         <style>
         hr {
-            border: solid;
+            border: dashed;
             height: 20px;
             background-color: white;
-            margin: 5px;
+            margin: 0px;
         }
         </style>
     """, unsafe_allow_html=True)
