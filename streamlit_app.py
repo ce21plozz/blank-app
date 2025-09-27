@@ -12,7 +12,7 @@ st.markdown(
     f"""
     <style>
     .stApp {{
-        background-image: url("data:image/webp;base64,{bg_image}");
+        background-image: url("data:image/jpg;base64,{bg_image}");
         background-position: center top;
         background-attachment: fixed;
         background-size: cover;
