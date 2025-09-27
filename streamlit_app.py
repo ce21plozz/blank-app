@@ -50,17 +50,19 @@ def seatgen(subclass):
     st.markdown("<hr style= 'height:2px;background-color:white';border-radius:20px;margin:0px>", unsafe_allow_html=True)
     st.markdown(
         """
-        <div style="
-            background-color: #9a9c9a;
-            color: black;
-            padding: 0px;
-            border-radius: 5px;
-            text-align: center;
-            font-weight: bold;
-            width: 240px;
-            margin-bottom: 1px;
-        ">
-            PAPAN TULIS
+        <div style="text-align:center">
+            <div style="
+                background-color: #9a9c9a;
+                color: black;
+                padding: 0px;
+                border-radius: 5px;
+                text-align: center;
+                font-weight: bold;
+                width: 240px;
+                margin-bottom: 2px;
+            ">
+                PAPAN TULIS
+            </div>
         </div>
         """,
         unsafe_allow_html=True)
