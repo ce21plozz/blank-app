@@ -62,13 +62,13 @@ def seatgen(subclass):
     st.markdown(
         """
         <div style="
-            background-color: #858585;
+            background-color: #9a9c9a; #papan tulis
             color: black;
             padding: 1px;
             border-radius: 5px;
             text-align: center;
             font-weight: bold;
-            width: 254px;
+            width: 230px;
             margin: auto;
         ">
             PAPAN TULIS
@@ -168,7 +168,7 @@ def seatgen(subclass):
                 rows[rcount] += '&nbsp;&nbsp;&nbsp;'
             rows[rcount] = rows[rcount].strip()
         st.markdown(f"""
-        <div style="text-align:center;max-width: 100%; margin: auto;font-size:0.82rem">
+        <div style="text-align:center;max-width: 100%; margin: auto;font-size:0.82rem"> #ukuran tempat duduk
             <span style= "text-align:center !important;background-color: black;border-radius:3px;padding:3px">{rows[rcount]}</span>
         </div>""", unsafe_allow_html=True)
         rcount += 1
