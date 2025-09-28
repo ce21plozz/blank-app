@@ -211,6 +211,6 @@ st.markdown("""
         <br>
         <span style='color:white;margin:0px;text-shadow:-2px -2px 0 red;font-weight:bold'>Credits:</span>
         <br>
-        <span style='color:lime;text-shadow:-2px -2px 0 blue;font-weight:bold;font-size:0.75rem'>1.) Gw yang namanya cuma satu kata</span> <span style='color:orange;text-shadow:-2px -2px 0 #994708;font-weight:bold'>(Pembuat Projek)</span>
+        <span style='color:lime;text-shadow:-2px -2px 0 blue;font-weight:bold;font-size:0.85rem'>1.) Gw yang namanya cuma satu kata</span> <span style='color:orange;text-shadow:-2px -2px 0 #994708;font-weight:bold;font-size:0.85rem'>(Pembuat Projek)</span>
         <br>
-        <span style='color:lime;text-shadow:-2px -2px 0 blue; font-weight:bold'>2.) Si tukang elektronik/komputer itu</span> <span style='color:orange;font-weight:bold;text-shadow:-2px -2px 0 #994708'>(Bugfixer)</span>""", unsafe_allow_html=True)
+        <span style='color:lime;text-shadow:-2px -2px 0 blue; font-weight:bold;font-size:0.85rem'>2.) Si tukang elektronik/komputer itu</span> <span style='color:orange;font-weight:bold;text-shadow:-2px -2px 0 #994708;font-size:0.85rem'>(Bugfixer)</span>""", unsafe_allow_html=True)
