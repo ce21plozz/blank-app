@@ -169,7 +169,7 @@ def seatgen(subclass):
     background: linear-gradient(90deg, red, orange, yellow, green, blue,violet, pink);  
     -webkit-background-clip: text;  
     -webkit-text-fill-color: transparent;  
-    font-size: 0.85rem;  
+    font-size: 0.95rem;  
   ">  
     👆Senin-Kamis sesuai ini👆 Jumat bebas!! ✨  
   </span>  
