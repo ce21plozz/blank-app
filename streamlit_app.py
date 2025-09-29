@@ -75,9 +75,9 @@ def seatgen(subclass):
                     border-radius: 5px;
                     text-align: center;
                     font-weight: bold;
-                    font-size: 0.8rem;
+                    font-size: 0.85rem;
                     display: block;
-                    width: 70px;
+                    width: 65px;
                     margin: 0 auto;
                     transform: translateX(85px);
                 ">
@@ -96,9 +96,9 @@ def seatgen(subclass):
                     border-radius: 5px;
                     text-align: center;
                     font-weight: bold;
-                    font-size: 0.8rem;
+                    font-size: 0.85rem;
                     display: block;
-                    width: 70px;
+                    width: 65px;
                     margin: 0 auto;
                     transform: translateX(-85px);
                 ">
