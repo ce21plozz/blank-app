@@ -77,11 +77,11 @@ def seatgen(subclass):
                     font-weight: bold;
                     font-size: 0.75rem;
                     display: block;
-                    width: 60px;
+                    width: 55px;
                     margin: 0 auto;
                     transform: translateX(90px);
                 ">
-                    Meja Guru
+                    MejaGuru
                 </div>
                 """,
                 unsafe_allow_html=True
@@ -98,7 +98,7 @@ def seatgen(subclass):
                     font-weight: bold;
                     font-size: 0.75rem;
                     display: block;
-                    width: 60px;
+                    width: 55px;
                     margin: 0 auto;
                     transform: translateX(-90px);
                 ">
