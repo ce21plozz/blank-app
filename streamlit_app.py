@@ -79,7 +79,7 @@ def seatgen(subclass):
                     display: block;
                     width: 55px;
                     margin: 0 auto;
-                    transform: translateX(95px);
+                    transform: translateX(92px);
                 ">
                     MejaGuru
                 </div>
@@ -100,7 +100,7 @@ def seatgen(subclass):
                     display: block;
                     width: 55px;
                     margin: 0 auto;
-                    transform: translateX(-95px);
+                    transform: translateX(-92px);
                 ">
                     MejaGuru
                 </div>
