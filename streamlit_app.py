@@ -77,9 +77,9 @@ def seatgen(subclass):
                     font-weight: bold;
                     font-size: 0.85rem;
                     display: block;
-                    width: 70px;
+                    width: 55px;
                     margin: 0 auto;
-                    transform: translateX(85px);
+                    transform: translateX(92px);
                 ">
                     Meja Guru
                 </div>
@@ -98,9 +98,9 @@ def seatgen(subclass):
                     font-weight: bold;
                     font-size: 0.85rem;
                     display: block;
-                    width: 70px;
+                    width: 55px;
                     margin: 0 auto;
-                    transform: translateX(-85px);
+                    transform: translateX(-92px);
                 ">
                     MejaGuru
                 </div>
