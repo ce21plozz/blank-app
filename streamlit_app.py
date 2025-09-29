@@ -75,7 +75,7 @@ def seatgen(subclass):
                     border-radius: 5px;
                     text-align: center;
                     font-weight: bold;
-                    font-size: 0.85rem;
+                    font-size: 0.8rem;
                     display: block;
                     width: 70px;
                     margin: 0 auto;
@@ -96,7 +96,7 @@ def seatgen(subclass):
                     border-radius: 5px;
                     text-align: center;
                     font-weight: bold;
-                    font-size: 0.85rem;
+                    font-size: 0.8rem;
                     display: block;
                     width: 70px;
                     margin: 0 auto;
@@ -171,7 +171,7 @@ def seatgen(subclass):
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
               font-family: Arial;
-              font-size: 0.9rem;
+              font-size: 0.95rem;
               text-align: center;
             ">
             👆Senin-Kamis sesuai ini👆 Jumat bebas!!✨
