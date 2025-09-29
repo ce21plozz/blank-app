@@ -164,7 +164,7 @@ def seatgen(subclass):
     if subclass == "X-6":   
         st.markdown("""
     <br>
-    <span style="background-color:black;padding:2px;border-radius:5px">
+    <span style="background-color:black;padding:2px;border-radius:5px;text-align:center !important;">
         <span style="
           background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
           -webkit-background-clip: text;
