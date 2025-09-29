@@ -170,7 +170,7 @@ def seatgen(subclass):
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           font-family: Arial;
-          font-size: 1rem;
+          font-size: 0.9rem;
           text-align: center;
         ">
         👆Senin-Kamis sesuai ini👆 Jumat bebas!!✨
