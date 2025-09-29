@@ -164,7 +164,7 @@ def seatgen(subclass):
     if subclass == "X-6":   
         st.markdown("""
     <span style="background-color:black">
-        <h2 style="
+        <span style="
           background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
@@ -173,7 +173,7 @@ def seatgen(subclass):
           text-align: center;
         ">
         👆Senin-Kamis sesuai ini👆 Jumat bebas!!✨
-        </h2>
+        </span>
     </span>
     """, unsafe_allow_html=True)
     st.markdown("<hr style= 'height:2px;background-color:white';border-radius:20px;margin: 0px>", unsafe_allow_html=True)
