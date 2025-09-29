@@ -210,9 +210,9 @@ def seatgen(subclass):
 </style>
 """, unsafe_allow_html=True)
 
-    if st.session_state.animate:
+    if st.session_state.animate: #namakelas = success-box
         st.markdown(f"""
-        <div class="success-box">
+        <div class="namakelas">
             Pengacakan Berhasil!! 🥳🥳🥳<br>
             (kamu dah rolling {st.session_state.count} kali)
         </div>
@@ -242,7 +242,7 @@ if 'count' not in st.session_state:
     st.session_state.count = 1
 if st.button("Lakuin Rolling tempat duduk! 🎲"):
     if subclass != 'Kosong':
-        st.session_state.animate = True
+        # st.session_state.animate = True
         seatgen(subclass)
         st.session_state.count += 1
         
