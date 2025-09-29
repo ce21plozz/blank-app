@@ -161,6 +161,19 @@ def seatgen(subclass):
             <span style= "text-align:center !important;background-color: #c7b29b;border-radius:3px;padding:3px;font-size:1rem">{rows[rcount]}</span>
         </div>""", unsafe_allow_html=True)
         rcount += 1
+    if subclass == "X-6":
+        st.markdown("""  
+<div style="text-align: center; background-color: black;">  
+  <span style="  
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);  
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;  
+    font-size: 0.8rem;  
+  ">  
+    👆Senin-Kamis sesuai ini👆 Jumat bebas!! ✨  
+  </span>  
+</div>  
+""", unsafe_allow_html=True)
     st.markdown("<hr style= 'height:2px;background-color:white';border-radius:20px;margin: 0px>", unsafe_allow_html=True)
     st.markdown("""
             <style>
