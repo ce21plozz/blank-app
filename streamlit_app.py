@@ -242,11 +242,7 @@ if 'count' not in st.session_state:
     st.session_state.count = 1
 if st.button("Lakuin Rolling tempat duduk! 🎲"):
     if subclass != 'Kosong':
-        st.session_state.animate = False
-        if "animate" not in st.session_state:
-            st.session_state.animate = False
-        else:
-            st.session_state.animate = True
+        st.session_state.animate = True
         seatgen(subclass)
         st.session_state.count += 1
         
