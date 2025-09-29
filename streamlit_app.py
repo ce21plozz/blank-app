@@ -209,12 +209,12 @@ def seatgen(subclass):
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown(f"""
-<div class="success-box">
-    Pengacakan Berhasil!! 🥳🥳🥳<br>
-    (kamu dah rolling {st.session_state.count} kali)
-</div>
-""", unsafe_allow_html=True)
+    st.markdown(f"""
+    <div class="success-box">
+        Pengacakan Berhasil!! 🥳🥳🥳<br>
+        (kamu dah rolling {st.session_state.count} kali)
+    </div>
+    """, unsafe_allow_html=True)
 
 st.markdown(
     """
