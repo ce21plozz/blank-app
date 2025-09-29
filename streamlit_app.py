@@ -167,7 +167,7 @@ def seatgen(subclass):
     <div style="text-align:center">
         <span style="background-color:black;padding:2px;border-radius:5px;">
             <span style="
-              background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+              background: linear-gradient(90deg, red, orange, yellow, green, blue, violet, pink);
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
               font-family: Arial;
