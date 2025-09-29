@@ -200,8 +200,8 @@ def seatgen(subclass):
     padding: 13px;
     color: #000000;
     font-family: Arial, sans-serif;
-    animation-name: pulse;
-    animation-duration: 1.5s;
+    /* animation-name: pulse; */
+    /* animation-duration: 1.5s; */
 }
 
 @keyframes pulse {
@@ -212,7 +212,7 @@ def seatgen(subclass):
 
     if st.session_state.animate: #namakelas = success-box
         st.markdown(f"""
-        <div class="namakelas">
+        <div class="success-box">
             Pengacakan Berhasil!! 🥳🥳🥳<br>
             (kamu dah rolling {st.session_state.count} kali)
         </div>
