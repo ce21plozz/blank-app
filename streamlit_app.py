@@ -189,8 +189,32 @@ def seatgen(subclass):
             }
             </style>
         """, unsafe_allow_html=True)
-    st.markdown(f"""<div style='background-color:rgba(0,175,0,0.8);opacity:0.9;border-radius:30px;text-align:left;padding:13px;
-                    color: #000000'>Pengacakan Berhasil!! 🥳🥳🥳<br>(kamu dah rolling {st.session_state.count} kali)</div>""", unsafe_allow_html=True)
+    st.markdown("""
+<style>
+.success-box {
+    background-color: rgba(0,175,0,0.8);
+    opacity: 0.9;
+    border-radius: 30px;
+    text-align: left;
+    padding: 13px;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    animation-name: pulse;
+    animation-duration: 1.5s;
+}
+
+@keyframes pulse {
+50%{transform: scale(1.2, 1.2)}
+}
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown(f"""
+<div class="success-box">
+    Pengacakan Berhasil!! 🥳🥳🥳<br>
+    (kamu dah rolling {st.session_state.count} kali)
+</div>
+""", unsafe_allow_html=True)
 
 st.markdown(
     """
