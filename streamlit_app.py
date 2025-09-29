@@ -189,10 +189,7 @@ def seatgen(subclass):
             }
             </style>
         """, unsafe_allow_html=True)
-    if "animate" not in st.session_state:
-        st.session_state.animate = False
-    else:
-        st.session_state.animate = True
+    
     st.markdown("""
 <style>
 .success-box {
@@ -246,6 +243,10 @@ if 'count' not in st.session_state:
 if st.button("Lakuin Rolling tempat duduk! 🎲"):
     if subclass != 'Kosong':
         seatgen(subclass)
+        if "animate" not in st.session_state:
+            st.session_state.animate = False
+        else:
+            st.session_state.animate = True
         st.session_state.count += 1
     elif subclass == 'Kosong':
         st.markdown("""<div style='background-color:rgba(255,0,0,0.8);opacity:0.9;border-radius:30px;text-align:left;padding:13px;
