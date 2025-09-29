@@ -189,6 +189,10 @@ def seatgen(subclass):
             }
             </style>
         """, unsafe_allow_html=True)
+    if "animate" not in st.session_state:
+        st.session_state.animate = False
+    else:
+        st.session_state.animate = True
     st.markdown("""
 <style>
 .success-box {
@@ -204,17 +208,18 @@ def seatgen(subclass):
 }
 
 @keyframes pulse {
-50%{transform: scale(1.2, 1.2)}
+50%{transform: scale(1.1, 1.1)}
 }
 </style>
 """, unsafe_allow_html=True)
 
-    st.markdown(f"""
-    <div class="success-box">
-        Pengacakan Berhasil!! 🥳🥳🥳<br>
-        (kamu dah rolling {st.session_state.count} kali)
-    </div>
-    """, unsafe_allow_html=True)
+    if st.session_state.animate:
+        st.markdown(f"""
+        <div class="success-box">
+            Pengacakan Berhasil!! 🥳🥳🥳<br>
+            (kamu dah rolling {st.session_state.count} kali)
+        </div>
+        """, unsafe_allow_html=True)
 
 st.markdown(
     """
