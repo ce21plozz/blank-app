@@ -75,11 +75,11 @@ def seatgen(subclass):
                     border-radius: 5px;
                     text-align: center;
                     font-weight: bold;
-                    font-size: 0.85rem;
+                    font-size: 0.75rem;
                     display: block;
-                    width: 65px;
+                    width: 60px;
                     margin: 0 auto;
-                    transform: translateX(85px);
+                    transform: translateX(90px);
                 ">
                     Meja Guru
                 </div>
@@ -96,11 +96,11 @@ def seatgen(subclass):
                     border-radius: 5px;
                     text-align: center;
                     font-weight: bold;
-                    font-size: 0.85rem;
+                    font-size: 0.75rem;
                     display: block;
-                    width: 65px;
+                    width: 60px;
                     margin: 0 auto;
-                    transform: translateX(-85px);
+                    transform: translateX(-90px);
                 ">
                     MejaGuru
                 </div>
