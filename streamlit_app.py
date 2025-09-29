@@ -75,6 +75,185 @@ def seatgen(subclass):
                     border-radius: 5px;
                     text-align: center;
                     font-weight: bold;
+                    font-size: 0.85rem;
+                    display: block;
+                    width: 70px;
+                    margin: 0 auto;
+                    transform: translateX(85px);
+                ">
+                    Meja Guru
+                </div>
+                """,
+                unsafe_allow_html=True
+            )
+        case 'X-5' | 'X-6':
+            st.markdown(
+                 """
+                <div style="
+                    background-color: #ba6900;
+                    color: black;
+                    padding: 1px;
+                    border-radius: 5px;
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: 0.85rem;
+                    display: block;
+                    width: 70px;
+                    margin: 0 auto;
+                    transform: translateX(-85px);
+                ">
+                    MejaGuru
+                </div>
+                """,
+                unsafe_allow_html=True
+               )
+    counter = 1
+    for i in range(4):
+        st.write()
+        counter -= 1
+        rcount = 0
+        rows = ['', '', '', '']
+        for i in range(4):
+            for j in range(2):
+                while True:
+                    try:
+                        idk = random.choice(list)
+                    except IndexError:
+                        rows[3] += "&nbsp;&nbsp&nbsp;[XX]"
+                        break
+                    if data[idk] == 'L' and (counter % 2 != 0 or counter % 2 == 0) and not 'P' in data.values():
+                        output = f"[<span style = 'color : blue'>{idk:0>2}</span>]"
+                        rows[rcount] += output
+                        del data[idk]
+                        list.remove(idk)
+                        break
+                    if data[idk] == 'P' and (counter % 2 != 0 or counter % 2 == 0) and not 'L' in data.values():
+                        output = f"[<span style = 'color : #e91ef7'>{idk:0>2}</span>]"
+                        rows[rcount] += output
+                        del data[idk]
+                        list.remove(idk)
+                        break
+                    if data[idk] == "P":
+                        if counter % 2 != 0:
+                            output = f"[<span style = 'color : #e91ef7'>{idk:0>2}</span>]"
+                            counter += 1
+                            rows[rcount] += output
+                            del data[idk]
+                            list.remove(idk)
+                            break
+                        else:
+                            continue
+                    if data[idk] == "L":
+                        if counter % 2 == 0:
+                            output = f"[<span style = 'color : blue'>{idk:0>2}</span>]"
+                            counter += 1
+                            rows[rcount] += output
+                            del data[idk]
+                            list.remove(idk)
+                            break
+                        else:
+                            continue
+            if j != 2 and i != 3:
+                rows[rcount] += '&nbsp;&nbsp;&nbsp;'
+            rows[rcount] = rows[rcount].strip()
+        st.markdown(f"""
+        <div style="text-align:center;max-width: 100%; margin: auto;"> 
+            <span style= "text-align:center !important;background-color: #53b594;border-radius:3px;padding:3px;font-size:1rem">{rows[rcount]}</span>
+        </div>""", unsafe_allow_html=True)
+        rcount += 1
+    st.markdown("<hr style= 'height:2px;background-color:white';border-radius:20px;margin: 0px>", unsafe_allow_html=True)
+    st.markdown("""
+            <style>
+            .stAlert {
+                background-color: #00d907 ;
+                opacity: 0.5 ;
+                border-radius: 30px ;
+            }
+            </style>
+        """, unsafe_allow_html=True)
+    st.markdown(f"""<div style='background-color:rgba(0,175,0,0.8);opacity:0.9;border-radius:30px;text-align:left;padding:13px;
+                    color: #000000'>Pengacakan Berhasil!! 🥳🥳🥳<br>(kamu dah rolling {st.session_state.count} kali)</div>""", unsafe_allow_html=True)
+
+st.markdown(
+    """
+    <style>
+    div[data-baseweb="select"] > div:first-child {
+        margin-top: -15px; 
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+st.markdown(
+    """
+    <span style = "color:white;margin: 0">
+    Mau rolling tempat duduk di kelas berapa? 🔢
+    </span>
+    """,
+    unsafe_allow_html=True
+)
+subclass = st.selectbox('', ['Kosong','X-1','X-2','X-3','X-4','X-5','X-6'])
+if 'count' not in st.session_state:
+    st.session_state.count = 1
+if st.button("Lakuin Rolling tempat duduk! 🎲"):
+    if subclass != 'Kosong':
+        seatgen(subclass)
+        st.session_state.count += 1
+    elif subclass == 'Kosong':
+        st.markdown("""<div style='background-color:rgba(255,0,0,0.8);opacity:0.9;border-radius:30px;text-align:left;padding:13px;
+                    color: #000000'>Pilih kelas dulu lah kocak... 😐</div>""", unsafe_allow_html=True)
+else:
+    st.markdown("""<div style='background-color:rgba(242,210,0,0.8);opacity:0.9;border-radius:30px;text-align:left;padding:13px;
+                    color: #000000'>Pilih Kelasmu! 📚</div>""", unsafe_allow_html=True)
+
+st.markdown("""
+        <br>
+        <span style='color:white;margin:0px;text-shadow:-2px -2px 0 red;font-weight:bold'>App diprogram oleh:</span>
+        <br>
+        <span style='color:lime;text-shadow:-2px -2px 0 blue;font-weight:bold;font-size:0.85rem'>1.) Gw yg namanya cuma sekata</span> <span style='color:orange;text-shadow:-2px -2px 0 #994708;font-weight:bold;font-size:0.85rem'>(Pembuat Projek)</span>
+        <br>
+        <span style='color:lime;text-shadow:-2px -2px 0 blue; font-weight:bold;font-size:0.85rem'>2.) Si tukang elektronik/komputer itu</span> <span style='color:orange;font-weight:bold;text-shadow:-2px -2px 0 #994708;font-size:0.85rem'>(Bugfixer)</span>""", unsafe_allow_html=True)    if subclass == 'X-3':
+        data = {1: 'L', 2: 'L', 3: 'L', 4: 'L', 5: 'L', 6: 'L', 7: 'L', 8: 'P', 9: 'P', 10: 'P', 11: 'P', 12: 'L', 13: 'L', 14: 'P', 15: 'L', 16: 'L', 17: 'P', 18: 'L', 19: 'L', 20: 'L', 21: 'P', 22: 'P', 23: 'L', 24: 'P', 25: 'P', 26: 'P', 27: 'L', 28: 'P', 29: 'P', 30: 'P', 31: 'L', 32: 'P'}
+    #10.4
+    if subclass == 'X-4':
+        data = {1: 'L', 2: 'P', 3: 'L', 4: 'P', 5: 'P', 6: 'L', 7: 'L', 8: 'L', 9: 'P', 10: 'L', 11: 'L', 12: 'P', 13: 'P', 14: 'P', 15: 'P', 16: 'P', 17: 'L', 18: 'P', 19: 'P', 20: 'L', 21: 'L', 22: 'L', 23: 'L', 24: 'P', 25: 'L', 26: 'L', 27: 'L', 28: 'L', 29: 'P', 30: 'P', 31: 'L', 32: 'P'}
+    #10.5
+    if subclass == 'X-5':
+        data = {1: 'P', 2: 'L', 3: 'L', 4: 'P', 5: 'P', 6: 'P', 7: 'L', 8: 'P', 9: 'L', 10: 'P', 11: 'L', 12: 'P', 13: 'L', 14: 'P', 15: 'P', 16: 'L', 17: 'L', 18: 'L', 19: 'P', 20: 'L', 21: 'L', 22: 'L', 23: 'L', 24: 'L', 25: 'P', 26: 'L', 27: 'L', 28: 'P', 29: 'P', 30: 'P', 31: 'L', 32: 'P'}
+    #10.6
+    if subclass == 'X-6':
+        data = {1: 'P', 2: 'P', 3: 'L', 4: 'L', 5: 'L', 6: 'P', 7: 'L', 8: 'L', 9: 'L', 10: 'P', 11: 'P', 12: 'L', 13: 'L', 14: 'L', 15: 'P', 16: 'P', 17: 'L', 18: 'L', 19: 'P', 20: 'P', 21: 'P', 22: 'P', 23: 'L', 24: 'L', 25: 'L', 26: 'L', 27: 'P', 28: 'P', 29: 'P', 30: 'P', 31: 'L', 32: 'P'}
+
+    st.markdown("""<div style="font-size: 1.1rem;font-family: Times New Roman;text-align:center;font-weight:bold;background-color:#04a0d4;border-radius:8px;padding:0.05px">Tata Letak Tempat Duduk Baru!</div>""", unsafe_allow_html=True)
+    st.markdown("<hr style= 'height:2px;background-color:white';border-radius:20px;margin:0px>", unsafe_allow_html=True)
+    st.markdown(
+        """
+        <div style="
+            background-color: #9a9c9a;
+            color: black;
+            padding: 0px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+            width: 240px;
+            margin: auto;
+        ">
+            PAPAN TULIS
+        </div>
+        """,
+        unsafe_allow_html=True)
+    match subclass:
+        case 'X-1' | 'X-2' | 'X-3' | 'X-4':
+            st.markdown(
+                """
+                <div style="
+                    background-color: #ba6900;
+                    color: black;
+                    padding: 1px;
+                    border-radius: 5px;
+                    text-align: center;
+                    font-weight: bold;
                     font-size: 0.75rem;
                     display: block;
                     width: 55px;
