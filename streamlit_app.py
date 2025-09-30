@@ -201,7 +201,7 @@ st.markdown(
 
 st.markdown(
     """
-    <span style = "color:white;margin: 0;font-family:Palatino">
+    <span style = "color:white;margin: 0;font-family:Palatino;font-size:0.85rem">
     Mau rolling tempat duduk di kelas berapa? 🔢
     </span>
     """,
