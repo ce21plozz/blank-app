@@ -6,7 +6,7 @@ def get_base64(file_path):
     with open(file_path, "rb") as f:
         return base64.b64encode(f.read()).decode()
 
-bg_image = get_base64("newdarkstbg.jpg")  # ganti path sesuai lokasi filenya
+bg_image = get_base64("images/newdarkstbg.jpg")  # ganti path sesuai lokasi filenya
 
 st.markdown(
     f"""
@@ -22,8 +22,8 @@ st.markdown(
     """,unsafe_allow_html=True)
 
 
-st.markdown("<h1 style= 'text-align: center;font-family: 'Cera CY', Helvetica, Arial, sans-serif;color:white'>Tempat Duduk Generator</h1>", unsafe_allow_html=True)
-st.markdown("<h4 style= 'text-align: center;font-family: cursive;color:white'>khusus kelas 10 (semua subkelas 10 bisa :D)</h4>", unsafe_allow_html=True)
+st.markdown("<h1 style= 'text-align: center;font-family: Tahoma;color:white'>Tempat Duduk Generator</h1>", unsafe_allow_html=True)
+st.markdown("<h4 style= 'text-align: center;font-family: Luminari;color:white'>khusus kelas 10 (semua subkelas 10 bisa :D)</h4>", unsafe_allow_html=True)
 def seatgen(subclass):
     list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28,29,30,31,32]
     random.shuffle(list)
@@ -166,12 +166,12 @@ def seatgen(subclass):
 <br>
 <div style="text-align: center; background-color: black;border-radius:5px">  
   <span style="  
-    background: linear-gradient(90deg, red, orange, yellow, green, blue,violet, pink);  
+    background: linear-gradient(90deg, red, orange, yellow, lime,blue, cyan,violet, pink);  
     -webkit-background-clip: text;  
     -webkit-text-fill-color: transparent;  
     font-size: 0.95rem;  
   ">  
-    👆Senin-Kamis sesuai ini👆 Jumat bebas!! ✨  
+    ☝️Senin-Kamis sesuai ini☝️ Jumat bebas!! ✨  
   </span>  
 </div>  
 """, unsafe_allow_html=True)
@@ -185,8 +185,8 @@ def seatgen(subclass):
             }
             </style>
         """, unsafe_allow_html=True)
-    st.markdown(f"""<div style='background-color:rgba(0,175,0,0.8);opacity:0.9;border-radius:30px;text-align:left;padding:13px;
-                    color: #000000'>Pengacakan Berhasil!! 🥳🥳🥳<br>(kamu dah rolling {st.session_state.count} kali)</div>""", unsafe_allow_html=True)
+    st.markdown(f"""<div style='background-color:rgba(0,175,0,0.8);opacity:0.9;border-radius:20px;text-align:left;padding:13px;
+                    color: #000000'><i>Pengacakan Berhasil!! 🥳🥳🥳<br>(kamu dah rolling {st.session_state.count} kali)</i></div>""", unsafe_allow_html=True)
 
 st.markdown(
     """
@@ -201,7 +201,7 @@ st.markdown(
 
 st.markdown(
     """
-    <span style = "color:white;margin: 0">
+    <span style = "color:white;margin: 0;font-family:Palatino">
     Mau rolling tempat duduk di kelas berapa? 🔢
     </span>
     """,
@@ -216,10 +216,10 @@ if st.button("Lakuin Rolling tempat duduk! 🎲"):
         st.session_state.count += 1
     elif subclass == 'Kosong':
         st.markdown("""<div style='background-color:rgba(255,0,0,0.8);opacity:0.9;border-radius:30px;text-align:left;padding:13px;
-                    color: #000000'>Pilih kelas dulu lah kocak... 😐</div>""", unsafe_allow_html=True)
+                    color: #000000'><i>Pilih kelas dulu lah kocak... 😐</i></div>""", unsafe_allow_html=True)
 else:
     st.markdown("""<div style='background-color:rgba(242,210,0,0.8);opacity:0.9;border-radius:30px;text-align:left;padding:13px;
-                    color: #000000'>Pilih Kelasmu! 📚</div>""", unsafe_allow_html=True)
+                    color: #000000'><i>Pilih Kelasmu! 📚</i></div>""", unsafe_allow_html=True)
 
 st.markdown("""
         <br>
