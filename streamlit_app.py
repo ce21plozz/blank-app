@@ -6,7 +6,7 @@ def get_base64(file_path):
     with open(file_path, "rb") as f:
         return base64.b64encode(f.read()).decode()
 
-bg_image = get_base64("images/newdarkstbg.jpg")  # ganti path sesuai lokasi filenya
+bg_image = get_base64("newdarkstbg.jpg")
 
 st.markdown(
     f"""
