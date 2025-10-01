@@ -23,7 +23,7 @@ st.markdown(
 
 
 st.markdown("<h2 style= 'text-align: center;font-family: Baskerville;color:white'>Tempat Duduk Generator</h2>", unsafe_allow_html=True)
-st.markdown("<h4 style= 'text-align: center;font-family: Courier;color:white'>khusus kelas 10 (semua subkelas 10 bisa :D)</h4>", unsafe_allow_html=True)
+st.markdown("<h5 style= 'text-align: center;font-family: Courier;color:white'>khusus kelas 10 (semua subkelas 10 bisa :D)</h5>", unsafe_allow_html=True)
 def seatgen(subclass):
     list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28,29,30,31,32]
     random.shuffle(list)
