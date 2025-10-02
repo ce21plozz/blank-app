@@ -62,9 +62,9 @@ st.markdown(
 
 st.markdown("""
             <div style="background-color:#4377ab;border-radius:8px;padding:10px;">
-                <div class="fredoka-e" style= 'text-align: center;color:white;font-size:2.5rem;'>Tempat Duduk Generator</div>
+                <div class="fredoka-e" style= 'text-align: center;color:white;font-size:2.45rem;'>Tempat Duduk Generator</div>
                 <br style="margin-top:0px;">
-                <div class="anta-regular" style= 'text-align: center;color:white;font-size:1.4rem;'>khusus untuk semua kelas 10</div>
+                <div class="anta-regular" style= 'text-align: center;color:white;font-size:1.35rem;'>khusus untuk semua kls 10</div>
             </div>""", unsafe_allow_html=True)
 def seatgen(subclass):
     list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28,29,30,31,32]
