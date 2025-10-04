@@ -2,6 +2,8 @@ import streamlit as st
 import random
 import base64
 
+st.set_page_config(page_title="Tempat Duduk Generator", page_icon="icon_jpg")
+
 st.markdown("""<style>
 @import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Anta&family=Convergence&family=Fredoka:wght@550&family=Patrick+Hand&display=swap');
 </style>""", unsafe_allow_html=True)
@@ -62,9 +64,9 @@ st.markdown(
 
 st.markdown("""
             <div style="background-color:#4377ab;border-radius:8px;padding:10px;">
-                <div class="fredoka-e" style= 'text-align: center;color:white;font-size:2.45rem;'>Tempat Duduk Generator</div>
+                <div class="fredoka-e" style= 'text-align: center;color:white;font-size:2.5rem;'>Tempat Duduk Generator</div>
                 <br style="margin-top:0px;">
-                <div class="anta-regular" style= 'text-align: center;color:white;font-size:1.35rem;'>khusus untuk semua kls 10</div>
+                <div class="anta-regular" style= 'text-align: center;color:white;font-size:1.65rem;'>khusus untuk semua kelas 10</div>
             </div>""", unsafe_allow_html=True)
 def seatgen(subclass):
     list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28,29,30,31,32]
@@ -87,8 +89,17 @@ def seatgen(subclass):
     #10.6
     if subclass == 'X-6':
         data = {1: 'P', 2: 'P', 3: 'L', 4: 'L', 5: 'L', 6: 'P', 7: 'L', 8: 'L', 9: 'L', 10: 'P', 11: 'P', 12: 'L', 13: 'L', 14: 'L', 15: 'P', 16: 'P', 17: 'L', 18: 'L', 19: 'P', 20: 'P', 21: 'P', 22: 'P', 23: 'L', 24: 'L', 25: 'L', 26: 'L', 27: 'P', 28: 'P', 29: 'P', 30: 'P', 31: 'L', 32: 'P'}
-
-    st.markdown("""<div style="font-size: 1.1rem;font-family: Times New Roman;text-align:center;font-weight:bold;background-color:#04a0d4;border-radius:8px;padding:0.05px">Tata Letak Tempat Duduk Baru!</div>""", unsafe_allow_html=True)
+    def luminance(r, g, b):
+        return 0.2126*r + 0.7152*g + 0.0722*b
+    r = random.randint(0, 255)
+    g = random.randint(0, 255)
+    b = random.randint(0, 255)
+    color = luminance(r, g, b)
+    if color > 128:
+        result_color = 'black'
+    else:
+        result_color = 'white'
+    st.markdown(f"""<div style="font-size: 1.1rem;font-family: Times New Roman;text-align:center;font-weight:bold;background-color: rgb({r},{g},{b});border-radius:8px;padding:0.05px;color:{result_color}">Tata Letak Tempat Duduk Baru!</div>""", unsafe_allow_html=True)
     st.markdown("<hr style= 'height:2px;background-color:white';border-radius:20px;margin:0px>", unsafe_allow_html=True)
     st.markdown(
         """
