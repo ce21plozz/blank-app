@@ -2,7 +2,7 @@ import streamlit as st
 import random
 import base64
 
-st.set_page_config(page_title="Tempat Duduk Generator", page_icon="icon_jpg")
+st.set_page_config(page_title="Tempat Duduk Generator", page_icon="icon.jpg")
 
 st.markdown("""<style>
 @import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Anta&family=Convergence&family=Fredoka:wght@550&family=Patrick+Hand&display=swap');
