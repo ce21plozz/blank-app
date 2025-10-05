@@ -63,9 +63,9 @@ st.markdown(
 
 
 st.markdown("""
-            <div style="background-color:#4377ab;border-radius:8px;padding:10px;line-height:0.9;">
+            <div style="background-color:#4377ab;border-radius:8px;padding:10px;line-height:0.95;">
                 <div class="fredoka-e" style= 'text-align: center;color:white;font-size:2.5rem;'>Tempat Duduk Generator</div>
-                <br style="margin-top:0px;line-height:0.6;">
+                <br style="margin-top:0px;line-height:0.625;">
                 <div class="anta-regular" style= 'text-align: center;color:white;font-size:1.65rem;'>khusus untuk semua kelas 10</div>
             </div>""", unsafe_allow_html=True)
 def seatgen(subclass):
