@@ -63,7 +63,7 @@ st.markdown(
 
 
 st.markdown("""
-            <div style="background-color:#4377ab;border-radius:8px;padding:10px;line-height:0.5;">
+            <div style="background-color:#4377ab;border-radius:8px;padding:10px;line-height:0.8;">
                 <div class="fredoka-e" style= 'text-align: center;color:white;font-size:2.5rem;'>Tempat Duduk Generator</div>
                 <br style="margin-top:0px;">
                 <div class="anta-regular" style= 'text-align: center;color:white;font-size:1.65rem;'>khusus untuk semua kelas 10</div>
