@@ -245,7 +245,7 @@ def seatgen(subclass):
             </style>
         """, unsafe_allow_html=True)
     st.markdown(f"""<div class="amaranth-regular" style='background-color:rgba(0,175,0,0.8);opacity:0.9;border-radius:20px;text-align:left;padding:13px;
-                    color: #000000; max-width:75%;'><i>Pengacakan Berhasil!! 🥳🥳🥳<br>(kamu dah rolling {st.session_state.count} kali)</i></div>""", unsafe_allow_html=True)
+                    color: #000000; max-width:85%;'><i>Pengacakan Berhasil!! 🥳🥳🥳<br>(kamu dah rolling {st.session_state.count} kali)</i></div>""", unsafe_allow_html=True)
 
 st.markdown(
     """
@@ -275,7 +275,7 @@ if st.button("Lakuin Rolling tempat duduk! 🎲"):
         st.session_state.count += 1
     elif subclass == 'Kosong':
         st.markdown("""<div class="amaranth-regular" style='background-color:rgba(255,0,0,0.8);opacity:0.9;border-radius:30px;text-align:left;padding:13px;
-                    color: #000000;max-width:75%'><i>Pilih kelas dulu lah kocak... 😐</i></div>""", unsafe_allow_html=True)
+                    color: #000000;max-width:78%'><i>Pilih kelas dulu lah kocak... 😐</i></div>""", unsafe_allow_html=True)
 else:
     st.markdown("""<div class="amaranth-regular" style='background-color:rgba(242,210,0,0.8);opacity:0.9;border-radius:30px;text-align:left;padding:13px;
                     color: #000000;max-width:55%;'><i>Pilih Kelasmu! 📚</i></div>""", unsafe_allow_html=True)
