@@ -290,7 +290,7 @@ st.markdown("""
         <br>
         <span style='color:white;margin:0px;text-shadow:-2px -2px 0 red;font-weight:bold'>Kredit tambahan:</span>
         <br>
-        <span style='color:lime;text-shadow:-2px -2px 0 blue;font-weight:bold;font-size:0.85rem'>1.) Jeconia Kellysta Hokky (aku dah dapet izin dari dia untuk make nama aslinya)</span> <span style='color:orange;text-shadow:-2px -2px 0 #994708;font-weight:bold;font-size:0.85rem'>(Promosi)</span>
+        <span style='color:lime;text-shadow:-2px -2px 0 blue;font-weight:bold;font-size:0.85rem'>1.) Jeconia Kellysta Hokky (aku dah dapet izin dari dia untuk pake nama aslinya)</span> <span style='color:orange;text-shadow:-2px -2px 0 #994708;font-weight:bold;font-size:0.85rem'>(Promosi)</span>
         
         """, unsafe_allow_html=True)
 st.markdown(f"""
