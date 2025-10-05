@@ -274,7 +274,7 @@ if st.button("Lakuin Rolling tempat duduk! 🎲"):
                     color: #000000'><i>Pilih kelas dulu lah kocak... 😐</i></div>""", unsafe_allow_html=True)
 else:
     st.markdown("""<div class="amaranth-regular" style='background-color:rgba(242,210,0,0.8);opacity:0.9;border-radius:30px;text-align:left;padding:13px;
-                    color: #000000'><i>Pilih Kelasmu! 📚</i></div>""", unsafe_allow_html=True)
+                    color: #000000;max-width:40%;'><i>Pilih Kelasmu! 📚</i></div>""", unsafe_allow_html=True)
 
 st.markdown("""
         <br>
