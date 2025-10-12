@@ -395,7 +395,7 @@ st.markdown(f"""
               <label class="label galdeano-regular">
                 Kasih Feedback atau saran
                 <br>
-                <textarea class='widget' name="feedback" rows="3" cols="50" placeholder="Tulis Feedbacknya disini" required></textarea>
+                <textarea class='widget' name="feedback" rows="3" cols="40" placeholder="Tulis Feedbacknya disini" required></textarea>
               </label>
               <br>
               <button class="widget" type="submit">Kirim Feedback</button>
