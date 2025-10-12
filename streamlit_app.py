@@ -381,19 +381,19 @@ st.markdown(f"""
             >
               <label for="rating" class="label galdeano-regular">Kasih rating dalam bintang</label>
                 <br>
-                <label class="labelradio galdeano-regular" for="1">1</label>
+                <label class="labelradio galdeano-regular" for="1">1⭐</label>
                 <input class="widget" type="radio" name="rating" value='1' id="1" required>
-                <label class="labelradio galdeano-regular" for="2">2</label>
+                <label class="labelradio galdeano-regular" for="2">2⭐</label>
                 <input class="widget" type="radio" name="rating" value='2' id="2">
-                <label class="labelradio galdeano-regular" for="3">3</label>
+                <label class="labelradio galdeano-regular" for="3">3⭐</label>
                 <input class="widget" type="radio" name="rating" value='3' id="3">
-                <label class="labelradio galdeano-regular" for="4">4</label>
+                <label class="labelradio galdeano-regular" for="4">4⭐</label>
                 <input class="widget" type="radio" name="rating" value='4' id="4">
-                <label class="labelradio galdeano-regular" for="5">5</label>
+                <label class="labelradio galdeano-regular" for="5">5⭐</label>
                 <input class="widget" type="radio" name="rating" value='5' id="5">
               <br>  
               <label class="label galdeano-regular">
-                Kasih Feedback atau saran
+                "Kasih Feedback (saran atau kritik)"
                 <br>
                 <textarea class='widget' name="feedback" rows="3" cols="40" placeholder="Tulis Feedbacknya disini" required></textarea>
               </label>
