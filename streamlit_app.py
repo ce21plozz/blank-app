@@ -393,7 +393,7 @@ st.markdown(f"""
                 <input class="widget" type="radio" name="rating" value='5' id="5">
               <br>  
               <label class="label galdeano-regular">
-                "Kasih Feedback (saran atau kritik)"
+                Kasih Feedback (saran atau kritik)
                 <br>
                 <textarea class='widget' name="feedback" rows="3" cols="40" placeholder="Tulis Feedbacknya disini" required></textarea>
               </label>
