@@ -51,20 +51,15 @@ st.markdown("""
 
 </style>""", unsafe_allow_html=True)
 
-
 def get_base64(file_path):
     with open(file_path, "rb") as f:
         return base64.b64encode(f.read()).decode()
-
-
-bg_image = get_base64("newdarkstbg.jpg")
-link_image = get_base64("placeholder_kasual.jpg")
 
 st.markdown(
     f"""
     <style>
     .stApp {{
-        background-image: url("data:image/jpg;base64,{bg_image}");
+        background-image: url("data:image/jpg;base64,{get_base64("images/newdarkstbg.jpg")}");
         background-position: center top;
         background-attachment: fixed;
         background-size: cover;
@@ -342,7 +337,7 @@ st.markdown(f"""
 st.markdown(f"""
 <div style="text-align:center;margin:25px;">
   <a href="https://kelompok.streamlit.app" target="_blank">
-    <img src="data:image/jpg;base64,{link_image}"
+    <img src="data:image/jpg;base64,{get_base64("images/placeholder_kasual.jpg")}"
          alt="placeholder"
          class="kelompok">
   </a>
