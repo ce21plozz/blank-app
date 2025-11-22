@@ -54,7 +54,7 @@ def rating():
                 }
                 .labelradio {
                 color:yellow;
-                font-size:1rem;
+                font-size:.8rem;
                 margin-left: 20px;
                 }
 
