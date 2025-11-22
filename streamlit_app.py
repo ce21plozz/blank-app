@@ -64,8 +64,10 @@ btn_css_property = """
                     button {
                     background-color: lightgray;
                     margin: .35em;
-                    border: 2px solid black;
+                    border: 2px solid #003bba;
                     transition: all .25s ease;
+                    color: black;
+                    box-shadow : 0 0 10px #007ab8;
                     }
                     button:hover {
                     opacity: .75;
