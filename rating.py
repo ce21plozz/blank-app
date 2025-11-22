@@ -54,8 +54,8 @@ def rating():
                 }
                 .labelradio {
                 color:yellow;
-                font-size:1.1rem;
-                margin-left: 25px;
+                font-size:1rem;
+                margin-left: 20px;
                 }
 
                 .widget, .widgetstar {
@@ -67,7 +67,7 @@ def rating():
                 padding: .4em;
                 }
                 .widgetstar {
-                transform: scale(1.3)
+                transform: scale(1.2)
                 }
                 .widget:hover {
                 border-radius: 10px;
