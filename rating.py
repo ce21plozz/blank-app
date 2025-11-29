@@ -69,11 +69,14 @@ def rating():
                 .widgetstar {
                 transform: scale(1.2)
                 }
+                .widgetstar:checked {
+                background-color: yellow;
+                }
                 .widget:hover {
                 border-radius: 10px;
                 border: 3px solid #29ba44;
                 transition: all 0.2s ease;
-                background-color: #b0b0b0;
+                background-color: #333;
                 }
                 </style>
                 """, unsafe_allow_html=True)

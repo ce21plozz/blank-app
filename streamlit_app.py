@@ -14,6 +14,17 @@ st.set_page_config(page_title="Tempat Duduk Generator", page_icon="icon.jpg")
 st.markdown("""<style>
 @import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Anta&family=Convergence&family=Fredoka:wght@550&family=Patrick+Hand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Galdeano&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=BBH+Sans+Bogle&family=Momo+Trust+Display&family=Rowdies:wght@300;400;700&display=swap');            
+.momo-trust-display-regular {
+font-family: "Momo Trust Display", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+.bbh-sans-bogle-regular {
+font-family: "BBH Sans Bogle", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
 </style>""", unsafe_allow_html=True)
 st.markdown("""
 <style>
@@ -94,28 +105,39 @@ st.markdown(
     f"""
     <style>
     .stApp {{
-        --c1 : #001b3d;
-        --c2 : #01234f;
-        background: linear-gradient(45deg, var(--c1) 25%, var(--c2)25%, var(--c2) 50%,var(--c1) 50%, var(--c1) 75%, var(--c2) 75%);
-        background-size: 90px 90px;
+    background: transparent;
+    }}
+    .stApp::before {{
+        --c1 : #19202e;
+        --c2 : #101727;
+        content: "";
+        z-index: -1;
+        inset: 0;
+        width: 200%;
+        height: 200%;
+        position: fixed;
+        background: linear-gradient(135deg, var(--c1) 25%, var(--c2)25%, var(--c2) 50%,var(--c1) 50%, var(--c1) 75%, var(--c2) 75%);
+        background-size: 100px 100px;
+        animation: BGmove 4500ms linear infinite;    
+    }}
+    
+    @keyframes BGmove {{
+        to {{transform: translate(-100px, -100px);}}
     }}
     </style>
     """, unsafe_allow_html=True)
 
 if  select == 'utama':
     st.markdown("""
-                <div style="background-color:#4377ab;border-radius:20px;padding:10px;line-height:0.95;border: .35rem solid cornflowerblue;box-shadow: 0 0 10px 0 black inset;">
-                    <div class="fredoka-e" style= 'text-align: center;color:white;font-size:2.5rem;'>Tempat Duduk Generator</div>
+                <div style="background-color:#4377ab;border-radius:20px;padding:20px;line-height:0.85;border: .35rem solid cornflowerblue;box-shadow: 0 0 10px 0 black inset;">
+                    <div class="bbh-sans-bogle-regular" style= 'text-align: center;color:white;font-size:2.5rem;letter-spacing:.2rem;'>Tempat Duduk Generator</div>
                     <br style="margin-top:0px;line-height:0.625;">
-                    <div class="anta-regular" style= 'text-align: center;color:white;font-size:1.525rem;'>khusus untuk semua kelas 10</div>
-                     <br style="margin-top:0px;line-height:0.1;">
-                    <div class="anta-regular" style= 'text-align: center;color:white;font-size:1rem;'>versi TA 2025-2026</div>
+                    <div class="fredoka-e" style= 'text-align: center;color:#d1d1d1;font-size:1rem;letter-spacing:.025rem'>Untuk kelas 10 (TA 2025-2026)</div>
                 </div>""", unsafe_allow_html=True)
 
     def seatgen(subclass):
         list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29,
                 30, 31, 32]
-        random.shuffle(list)
         # 10.1
         if subclass == 'X-1':
             data = {1: 'L', 2: 'L', 3: 'L', 4: 'P', 5: 'P', 6: 'L', 7: 'P', 8: 'P', 9: 'L', 10: 'L', 11: 'L', 12: 'P',
@@ -141,13 +163,15 @@ if  select == 'utama':
             data = {1: 'P', 2: 'L', 3: 'L', 4: 'P', 5: 'P', 6: 'P', 7: 'L', 8: 'P', 9: 'L', 10: 'P', 11: 'L', 12: 'P',
                     13: 'L', 14: 'P', 15: 'P', 16: 'L', 17: 'L', 18: 'L', 19: 'P', 20: 'L', 21: 'L', 22: 'L', 23: 'L',
                     24: 'L', 25: 'P', 26: 'L', 27: 'L', 28: 'P', 29: 'P', 30: 'P', 31: 'L', 32: 'P'}
+            names = ["Agnes", "Alfon", "Ricad", "Ara", "Quincy", "Cayla", "Tian", "Aurel", "Dion", "Eva", "Gebung", "Gratia", "Hiero", "Janice", "Kelly", "Joshua", "Marvin", "Mirace", "Naneo", "Honey", "Nelson", "Nicho", "Owen", "Aan", "rosa", "Abner", "Sean", "Sera", "Tascha", "Liona", "Will", "Fanya"]
+            nama = [name.center(6, '-').title() for name in names]
         # 10.6
         if subclass == 'X-6':
             data = {1: 'P', 2: 'P', 3: 'L', 4: 'L', 5: 'L', 6: 'P', 7: 'L', 8: 'L', 9: 'L', 10: 'P', 11: 'P', 12: 'L',
                     13: 'L', 14: 'L', 15: 'P', 16: 'P', 17: 'L', 18: 'L', 19: 'P', 20: 'P', 21: 'P', 22: 'P', 23: 'L',
                     24: 'L', 25: 'L', 26: 'L', 27: 'P', 28: 'P', 29: 'P', 30: 'P', 31: 'L', 32: 'P'}
             names = ['abi','agnes','alden','andre','andrew','aurel','yefta','caleb','candra','dinda','chatln','anton','daniel','andra','gaby','sharon','faith','jojo','joyce','kiseki','maria','michel','nathan','otniel','owen','pedro','queen','rachel','kai','talita','destra','yohana',]
-            nama = [name.ljust(6).title() for name in names]
+            nama = [name.center(6,'-').title() for name in names]
         def luminance(r, g, b):
             return 0.2126 * r + 0.7152 * g + 0.0722 * b
 
@@ -237,20 +261,20 @@ if  select == 'utama':
                             rows[3] += "&nbsp;&nbsp&nbsp;[XX]"
                             break
                         if data[idk] == 'L' and (counter % 2 != 0 or counter % 2 == 0) and not 'P' in data.values():
-                            output = f"[<span style = 'color : blue'>{idk:0>2}</span>]"
+                            output = f"[<span style = 'color : blue'>{nama[idk-1] if subclass == "X-6" or subclass == "X-5" else str(idk).rjust(2, "0") }</span>]"
                             rows[rcount] += output
                             del data[idk]
                             list.remove(idk)
                             break
                         if data[idk] == 'P' and (counter % 2 != 0 or counter % 2 == 0) and not 'L' in data.values():
-                            output = f"[<span style = 'color : #e91ef7'>{idk:0>2}</span>]"
+                            output = f"[<span style = 'color : #e91ef7'>{nama[idk-1] if subclass == "X-6" or subclass == "X-5" else str(idk).rjust(2, "0") }</span>]"
                             rows[rcount] += output
                             del data[idk]
                             list.remove(idk)
                             break
                         if data[idk] == "P":
                             if counter % 2 != 0:
-                                output = f"[<span style = 'color : #e91ef7'>{idk:0>2}</span>]"
+                                output = f"[<span style = 'color : #e91ef7'>{nama[idk-1] if subclass == "X-6" or subclass == "X-5" else str(idk).rjust(2, "0") }</span>]"
                                 counter += 1
                                 rows[rcount] += output
                                 del data[idk]
@@ -260,7 +284,7 @@ if  select == 'utama':
                                 continue
                         if data[idk] == "L":
                             if counter % 2 == 0:
-                                output = f"[<span style = 'color : blue'>{idk:0>2}</span>]"
+                                output = f"[<span style = 'color : blue'>{nama[idk-1] if subclass == "X-6" or subclass == "X-5" else str(idk).rjust(2, "0") }</span>]"
                                 counter += 1
                                 rows[rcount] += output
                                 del data[idk]
@@ -269,12 +293,51 @@ if  select == 'utama':
                             else:
                                 continue
                 if j != 2 and i != 3:
-                    rows[rcount] += '&nbsp;&nbsp;&nbsp;'
+                    rows[rcount] += '&nbsp;&nbsp;'
                 rows[rcount] = rows[rcount].strip()
             st.markdown(f"""
-            <div style="text-align:center;max-width: 100%; margin: auto;"> 
-                <span style= "text-align:center !important;background-color: #c7b29b;border-radius:3px;padding:3px;font-size:1rem">{rows[rcount]}</span>
-            </div>""", unsafe_allow_html=True)
+            <div class="res-container" style="text-align:center;max-width: 100%; margin: 0;border: 1px solid cornflowerblue;"> 
+                <span class="result" style= "">{rows[rcount]}</span>
+            </div>
+            
+            <style>
+            .res-container{{
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            }}
+            
+            .result {{
+                font-family: monospace;
+                letter-spacing:-0.025em;
+                background-color: #c7b29b;
+                border-radius:3px;
+                padding:1.5px;
+                line-height: auto;
+                font-size: .8rem;
+                }}
+            
+            @media (max-width: 600px) and (min-width: 471px){{
+                .result {{
+                letter-spacing:-0.05em;
+                padding:1px;
+                font-size: .75rem;
+                }}
+            }}
+            @media (max-width: 470px){{
+                .result {{
+                letter-spacing:-0.07rem;
+                padding:1px .1px;
+                font-size: .65rem;
+                line-height: -1.9rem;
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+                }}
+            }}
+            </style>
+            
+            """, unsafe_allow_html=True)
             rcount += 1
         st.markdown("""
                     <style>
@@ -356,7 +419,7 @@ if  select == 'utama':
             <br>
             <span style='color:white;margin:0px;text-shadow:-2px -2px 0 red;font-weight:bold'>Kredit tambahan:</span>
             <br>
-            <span style='color:lime;text-shadow:-2px -2px 0 blue;font-weight:bold;font-size:0.85rem'>1.) Jeconia Kellysta Hokky (aku dah dapet izin dari dia untuk pake nama aslinya)</span> <span style='color:orange;text-shadow:-2px -2px 0 #994708;font-weight:bold;font-size:0.85rem'>(Promosi website)</span>
+            <span style='color:lime;text-shadow:-2px -2px 0 blue;font-weight:bold;font-size:0.85rem'>1.) Kelly</span> <span style='color:orange;text-shadow:-2px -2px 0 #994708;font-weight:bold;font-size:0.85rem'>(Promosi website & pembuat database X-5)</span>
             """, unsafe_allow_html=True)
 elif select == "ekstra":
     ekstra()
