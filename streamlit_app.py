@@ -186,21 +186,35 @@ if  select == 'utama':
         st.markdown(
             f"""<div style="font-size: 1.1rem;font-family: Times New Roman;text-align:center;font-weight:bold;background-color: rgb({r},{g},{b});border-radius:8px;padding:0.05px;color:{result_color}">Tata Letak Tempat Duduk Baru!</div>""",
             unsafe_allow_html=True)
-        st.markdown("<hr style= 'height:2px;background-color:white;border-radius:20px;margin:40px 20px'>", unsafe_allow_html=True)
+        st.markdown("<hr style= 'height:2px;background-color:white;border-radius:20px;margin:25px 20px'>", unsafe_allow_html=True)
         st.markdown(
-            """
-            <div style="
+            f"""
+            <div id="whiteboard">
+                PAPAN TULIS
+            </div>
+            <style>
+            #whiteboard {{
                 background-color: #9a9c9a;
                 color: black;
                 padding: 0px;
                 border-radius: 5px;
                 text-align: center;
                 font-weight: bold;
-                width: 240px;
+                width: {475 if subclass == "X-5" or subclass == "X-6" else 240}px;
                 margin: auto;
-            ">
-                PAPAN TULIS
-            </div>
+            }}
+            
+            @media (max-width: 600px) and (min-width: 471px) {{
+                #whiteboard {{
+                    width: {420 if subclass == "X-5" or subclass == "X-6" else 240}px;
+                }}
+            }}
+            @media (max-width: 470px) {{
+                #whiteboard {{
+                    width: {320 if subclass == "X-5" or subclass == "X-6" else 240}px;
+                }}
+            }}
+            </style>
             """,
             unsafe_allow_html=True)
         match subclass:
@@ -228,7 +242,11 @@ if  select == 'utama':
             case 'X-5' | 'X-6':
                 st.markdown(
                     """
-                   <div style="
+                   <div id="mejaguru">
+                       Meja Guru
+                   </div>
+                   <style>
+                   #mejaguru {
                        background-color: #ba6900;
                        color: black;
                        padding: 1px;
@@ -237,12 +255,23 @@ if  select == 'utama':
                        font-weight: bold;
                        font-size: 0.75rem;
                        display: block;
-                       width: 55px;
+                       width: 100px;
                        margin: 0 auto;
-                       transform: translateX(-92px);
-                   ">
-                       MejaGuru
-                   </div>
+                       transform: translateX(-187px);
+                   }
+                   
+                   @media (max-width: 600px) and (min-width: 471px) {
+                    #mejaguru {
+                        transform: translateX(-161px);
+                    }
+                   }
+                   @media (max-width: 470px) {
+                    #mejaguru {
+                        transform: translateX(-125px);
+                        width: 70px;
+                    }
+                   }
+                   </style>
                    """,
                     unsafe_allow_html=True
                 )
@@ -296,7 +325,7 @@ if  select == 'utama':
                     rows[rcount] += '&nbsp;&nbsp;'
                 rows[rcount] = rows[rcount].strip()
             st.markdown(f"""
-            <div class="res-container" style="text-align:center;max-width: 100%; margin: 0;border: 1px solid cornflowerblue;"> 
+            <div class="res-container" style="text-align:center;max-width: 100%; margin: 0;"> 
                 <span class="result" style= "">{rows[rcount]}</span>
             </div>
             
@@ -314,7 +343,7 @@ if  select == 'utama':
                 border-radius:3px;
                 padding:1.5px;
                 line-height: auto;
-                font-size: .8rem;
+                font-size: {0.8 if subclass == "X-5" or subclass == "X-6" else 0.75}rem;
                 }}
             
             @media (max-width: 600px) and (min-width: 471px){{
@@ -328,7 +357,7 @@ if  select == 'utama':
                 .result {{
                 letter-spacing:-0.07rem;
                 padding:1px .1px;
-                font-size: .65rem;
+                font-size: {0.65 if subclass == "X-5" or subclass == "X-6" else 0.85}rem;
                 line-height: -1.9rem;
                 display: flex;
                 justify-content: center;
@@ -363,7 +392,7 @@ if  select == 'utama':
         </span>
     </div> 
     """, unsafe_allow_html=True)
-        st.markdown("<hr style= 'height:2px;background-color:white;border-radius:20px;margin:40px 20px;'>",
+        st.markdown("<hr style= 'height:2px;background-color:white;border-radius:20px;margin:25px 20px;'>",
                     unsafe_allow_html=True)
         st.markdown("""
                 <style>
@@ -409,18 +438,34 @@ if  select == 'utama':
         st.markdown("""<div class="amaranth-regular" style='background-color:rgba(242,210,0,0.8);opacity:0.9;border-radius:30px;text-align:left;padding:13px;
                         color: #000000;max-width:55%;'><i>Pilih Kelasmu! 📚</i></div>""", unsafe_allow_html=True)
 
-    st.markdown("""
-            <br>
-            <span style='color:white;margin:0px;text-shadow:-2px -2px 0 red;font-weight:bold'>App diprogram oleh:</span>
-            <br>
-            <span style='color:lime;text-shadow:-2px -2px 0 blue;font-weight:bold;font-size:0.85rem'>1.) Gw yg namanya cuma sekata</span> <span style='color:orange;text-shadow:-2px -2px 0 #994708;font-weight:bold;font-size:0.85rem'>(Pembuat Projek)</span>
-            <br>
-            <span style='color:lime;text-shadow:-2px -2px 0 blue; font-weight:bold;font-size:0.85rem'>2.) Si tukang elektronik/komputer itu</span> <span style='color:orange;font-weight:bold;text-shadow:-2px -2px 0 #994708;font-size:0.85rem'>(Helper)</span>
-            <br>
-            <span style='color:white;margin:0px;text-shadow:-2px -2px 0 red;font-weight:bold'>Kredit tambahan:</span>
-            <br>
-            <span style='color:lime;text-shadow:-2px -2px 0 blue;font-weight:bold;font-size:0.85rem'>1.) Kelly</span> <span style='color:orange;text-shadow:-2px -2px 0 #994708;font-weight:bold;font-size:0.85rem'>(Promosi website & pembuat database X-5)</span>
-            """, unsafe_allow_html=True)
+    st.html("""
+            <div class="credits">
+                <span style='color:white;margin:0px;text-shadow:-2px -2px 0 red;font-weight:bold'>App diprogram oleh:</span>
+                <br>
+                <span style='color:lime;text-shadow:-2px -2px 0 blue;font-weight:bold;font-size:0.85rem'>1.) Gw yg namanya cuma sekata</span> <span style='color:orange;text-shadow:-2px -2px 0 #994708;font-weight:bold;font-size:0.85rem'>(Developer utama dalam projek)</span>
+                <br>
+                <span style='color:lime;text-shadow:-2px -2px 0 blue; font-weight:bold;font-size:0.85rem'>2.) Si tukang elektronik/komputer itu</span> <span style='color:orange;font-weight:bold;text-shadow:-2px -2px 0 #994708;font-size:0.85rem'>(Helper & Tester)</span>
+                <br>
+                <span style='color:white;margin:0px;text-shadow:-2px -2px 0 red;font-weight:bold'>Kredit tambahan:</span>
+                <br>
+                <span style='color:lime;text-shadow:-2px -2px 0 blue;font-weight:bold;font-size:0.85rem'>1.) Jeconia Kellysta Hokky</span> <span style='color:orange;text-shadow:-2px -2px 0 #994708;font-weight:bold;font-size:0.85rem'>(Promosi website & pembuat database X-5)</span>
+            </div>
+            
+            <style>
+            .credits {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 3px solid black;
+                flex-direction: column;
+                margin: 2rem 0;
+                background-image: linear-gradient(20deg, transparent 35%, #0a112b 55%, #0e1d52), repeating-linear-gradient(-10deg,transparent 45px, #1f1f1f 45px, #1f1f1f 48px,transparent 48px, transparent 80px), repeating-linear-gradient(80deg,black 45px, #1f1f1f 45px, #1f1f1f 48px,black 48px, black 80px);
+                border-radius: 50px 0 ;
+                box-shadow: 0 0 5px 0 #858585, 0 0 15px 0 #2e3d73 inset;
+                padding: 8px;
+            }
+            </style>
+            """)
 elif select == "ekstra":
     ekstra()
 elif select == 'rating':
