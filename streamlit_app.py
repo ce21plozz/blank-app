@@ -195,6 +195,7 @@ if  select == 'utama':
             <style>
             #whiteboard {{
                 background-color: #9a9c9a;
+                border: 2px solid #6b6e6b;
                 color: black;
                 padding: 0px;
                 border-radius: 5px;
@@ -202,6 +203,7 @@ if  select == 'utama':
                 font-weight: bold;
                 width: {475 if subclass == "X-5" or subclass == "X-6" else 240}px;
                 margin: auto;
+                box-sizing: content-box;
             }}
             
             @media (max-width: 600px) and (min-width: 471px) {{
@@ -223,6 +225,7 @@ if  select == 'utama':
                     """
                     <div style="
                         background-color: #ba6900;
+                        border: 2px solid #8f5304;
                         color: black;
                         padding: 1px;
                         border-radius: 5px;
@@ -233,6 +236,7 @@ if  select == 'utama':
                         width: 55px;
                         margin: 0 auto;
                         transform: translateX(92px);
+                        box-sizing: content-box;
                     ">
                         MejaGuru
                     </div>
@@ -248,6 +252,7 @@ if  select == 'utama':
                    <style>
                    #mejaguru {
                        background-color: #ba6900;
+                       border: 2px solid #8f5304;
                        color: black;
                        padding: 1px;
                        border-radius: 5px;
