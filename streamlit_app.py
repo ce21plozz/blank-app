@@ -446,13 +446,10 @@ if  select == 'utama':
     st.html("""
             <div class="credits">
                 <span style='color:white;margin:0px;text-shadow:-2px -2px 0 red;font-weight:bold'>App diprogram oleh:</span>
-                <br>
                 <span style='color:lime;text-shadow:-2px -2px 0 blue;font-weight:bold;font-size:0.85rem'>1.) Gw yg namanya cuma sekata</span> <span style='color:orange;text-shadow:-2px -2px 0 #994708;font-weight:bold;font-size:0.85rem'>(Developer utama dalam projek)</span>
-                <br>
                 <span style='color:lime;text-shadow:-2px -2px 0 blue; font-weight:bold;font-size:0.85rem'>2.) Si tukang elektronik/komputer itu</span> <span style='color:orange;font-weight:bold;text-shadow:-2px -2px 0 #994708;font-size:0.85rem'>(Helper & Tester)</span>
                 <br>
                 <span style='color:white;margin:0px;text-shadow:-2px -2px 0 red;font-weight:bold'>Kredit tambahan:</span>
-                <br>
                 <span style='color:lime;text-shadow:-2px -2px 0 blue;font-weight:bold;font-size:0.85rem'>1.) Jeconia Kellysta Hokky</span> <span style='color:orange;text-shadow:-2px -2px 0 #994708;font-weight:bold;font-size:0.85rem'>(Promosi website & pembuat database X-5)</span>
             </div>
             
